@@ -4,7 +4,7 @@ addpath("/Volumes/Emily_Project/Data/Project Data")
 clear all
 close all
 
-PhaseSample1 = 'Phase_6_2_1_12';
+PhaseSample1 = 'Phase_6_2_1_12'; %change this to file name
 
 FileType = '.jpg';
 PhaseFile = strcat(PhaseSample1,FileType);
@@ -25,7 +25,6 @@ imshow(I);
     triplePoints = cat(1, triplePoints,a1.Position);
     a2 = drawpoint('Color', 'w');
     triplePoints = cat(1, triplePoints,a2.Position);
-    
     a3 = drawpoint('Color', 'w');
     triplePoints = cat(1, triplePoints,a3.Position);
     circlePoints = cat(2, circlePoints, triplePoints)
